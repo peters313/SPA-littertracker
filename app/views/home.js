@@ -1,4 +1,4 @@
-
+var React = require('react');
 
 var Home = React.createClass({
   render: function() {
@@ -11,6 +11,6 @@ var Home = React.createClass({
 });
 
 ReactDOM.render(
-  var destination = document.querySelector("#container");
-    <Home />
+  <Home />
+  document.getElementbyId("container");
 );
