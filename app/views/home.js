@@ -1,6 +1,6 @@
 var React = require('react');
 
-var Home = React.createClass({
+export default class Home extends React.Component({
   render: function() {
     return (
       <div className="commentForm">
