@@ -1,9 +1,9 @@
 var React = require('react');
 
 export default class Home extends React.Component({
-  render: function() {
+  render() {
     return (
-      <div className="commentForm">
+      <div>
         Hello, world! I am a CommentForm.
       </div>
     );
@@ -11,6 +11,6 @@ export default class Home extends React.Component({
 });
 
 ReactDOM.render(
-  <Home />
+   React.createElement(Home, null),
   document.getElementbyId("container");
 );
