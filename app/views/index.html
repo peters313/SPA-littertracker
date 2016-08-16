@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>React! React! React!</title>
+  <title>Litter Tracker</title>
   <script src="https://fb.me/react-15.1.0.js"></script>
   <script src="https://fb.me/react-dom-15.1.0.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
@@ -69,11 +69,11 @@
       render: function() {
         return (
           <div>
-          <h1>Simple SPA</h1>
+          <h1>Litter Tracker</h1>
           <ul className="header">
           <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
-          <li><Link to="/stuff" activeClassName="active">Stuff</Link></li>
-          <li><Link to="/contact" activeClassName="active">Contact</Link></li>
+          <li><Link to="/litters" activeClassName="active">Litters</Link></li>
+          <li><Link to="/vetInfo" activeClassName="active">Vet Info</Link></li>
           </ul>
           <div className="content">
           {this.props.children}
@@ -101,7 +101,7 @@
       }
     });
 
-    var Contact = React.createClass({
+    var vetInfo = React.createClass({
       render: function() {
         return (
           <div>
@@ -114,7 +114,7 @@
       }
     });
 
-    var Stuff = React.createClass({
+    var litters = React.createClass({
       render: function() {
         return (
           <div>
@@ -137,8 +137,8 @@
       <Router>
       <Route path="/" component={App}>
       <IndexRoute component={Home}/>
-      <Route path="stuff" component={Stuff} />
-      <Route path="contact" component={Contact} />
+      <Route path="litters" component={litters} />
+      <Route path="vetInfo" component={vetInfo} />
       </Route>
       </Router>,
       destination
