@@ -1,13 +1,17 @@
-var { Router,
-  Route,
-  IndexRoute,
-  IndexLink,
-  Link } = ReactRouter;
+import React from 'react'
+import { render } from 'react-dom'
+import { Router, Route, IndexRoute, IndexLink, Link, browserHistory } from 'react-router'
 
-  var destination = document.getElementById("container");
+// var { Router,
+//   Route,
+//   IndexRoute,
+//   IndexLink,
+//   Link } = ReactRouter;
 
-  var App = React.createClass({
-    render: function() {
+  const destination = document.getElementById("container");
+
+  const App = React.createClass({
+    render() {
       return (
         <div>
         <h1>Litter Tracker</h1>
@@ -24,11 +28,11 @@ var { Router,
     }
   });
 
-  var Home = React.createClass({
-    render: function() {
+  const Home = React.createClass({
+    render() {
       return (
         <div>
-        <h2>HELLO</h2>
+        <h2>Home</h2>
         <p>Cras facilisis urna ornare ex volutpat, et
         convallis erat elementum. Ut aliquam, ipsum vitae
         gravida suscipit, metus dui bibendum est, eget rhoncus nibh
@@ -42,8 +46,8 @@ var { Router,
     }
   });
 
-  var vetInfo = React.createClass({
-    render: function() {
+  const vetInfo = React.createClass({
+    render() {
       return (
         <div>
         <h2>GOT QUESTIONS?</h2>
@@ -55,8 +59,8 @@ var { Router,
     }
   });
 
-  var litters = React.createClass({
-    render: function() {
+  const litters = React.createClass({
+    render() {
       return (
         <div>
         <h2>Litters</h2>
@@ -81,5 +85,5 @@ var { Router,
     <Route path="vetInfo" component={vetInfo} />
     </Route>
     </Router>,
-    document.body
+    destination
   );
