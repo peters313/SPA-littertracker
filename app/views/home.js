@@ -81,5 +81,5 @@ var { Router,
     <Route path="vetInfo" component={vetInfo} />
     </Route>
     </Router>,
-    destination
+    document.body
   );
