@@ -39,8 +39,6 @@ import { Router, Route, IndexRoute, IndexLink, Link, browserHistory } from 'reac
         metus nec massa. Maecenas hendrerit laoreet augue
         nec molestie. Cum sociis natoque penatibus et magnis
         dis parturient montes, nascetur ridiculus mus.</p>
-
-        <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
         </div>
       );
     }
@@ -50,7 +48,7 @@ import { Router, Route, IndexRoute, IndexLink, Link, browserHistory } from 'reac
     render() {
       return (
         <div>
-        <h2>GOT QUESTIONS?</h2>
+        <h2>Vet Info</h2>
         <p>The easiest thing to do is post on
         our <a href="http://forum.kirupa.com">forums</a>.
         </p>
