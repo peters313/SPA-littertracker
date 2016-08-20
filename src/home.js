@@ -75,12 +75,31 @@ import { Router, Route, IndexRoute, IndexLink, Link, browserHistory } from 'reac
     }
   });
 
+    const misc = React.createClass({
+      render() {
+        return (
+          <div>
+          <h2>Misc</h2>
+          <p>Here is where you can put additional information on your page</p>
+          <ol>
+          <li>Nulla pulvinar diam</li>
+          <li>Facilisis bibendum</li>
+          <li>Vestibulum vulputate</li>
+          <li>Eget erat</li>
+          <li>Id porttitor</li>
+          </ol>
+          </div>
+        );
+      }
+    });
+
   ReactDOM.render(
     <Router>
     <Route path="/" component={App}>
     <IndexRoute component={Home}/>
     <Route path="litters" component={litters} />
     <Route path="vetInfo" component={vetInfo} />
+    <Route path="misc" component={misc} />
     </Route>
     </Router>,
     destination
